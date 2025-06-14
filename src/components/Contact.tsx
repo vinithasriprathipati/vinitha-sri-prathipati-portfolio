@@ -102,7 +102,7 @@ const Contact = () => {
                 </div>
               </a>
               
-              <a href="https://linkedin.com/in/vinitha-sri-prathipati" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
+              <a href="https://www.linkedin.com/in/vinitha-chowdary-203232258/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
                 <Linkedin className="w-6 h-6 text-primary" />
                 <div>
                   <div className="font-semibold text-gray-900">LinkedIn</div>
