@@ -56,7 +56,7 @@ const About = () => {
                       B.Tech in Information Technology
                     </h4>
                     <div className="text-primary font-medium">
-                      Aditya Engineering College
+                      Aditya University
                     </div>
                     <div className="text-gray-600">
                       Expected 2026
