@@ -59,7 +59,7 @@ const About = () => {
                       Aditya Engineering College
                     </div>
                     <div className="text-gray-600">
-                      Expected 2025
+                      Expected 2026
                     </div>
                   </div>
                 </div>
