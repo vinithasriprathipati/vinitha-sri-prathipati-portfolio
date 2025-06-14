@@ -21,10 +21,10 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // EmailJS configuration - you'll need to replace these with your actual values
-    const serviceId = 'YOUR_SERVICE_ID';
-    const templateId = 'YOUR_TEMPLATE_ID';
-    const publicKey = 'YOUR_PUBLIC_KEY';
+    // Your EmailJS configuration
+    const serviceId = 'service_f5aq94d';
+    const templateId = 'template_ht2visf';
+    const publicKey = 'LmkQsiXufy_G9um3x';
     
     try {
       console.log('Sending email with data:', formData);
