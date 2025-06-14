@@ -8,7 +8,7 @@ const Experience = () => {
     {
       title: "Apprentice",
       company: "Areteans",
-      period: "Feb 2025 – Present",
+      period: "Jan 2025 to Present",
       description: "Working on enterprise solutions using Pega platform to develop scalable business applications.",
       skills: ["Pega", "Enterprise Solutions", "Low-Code Development"]
     },
