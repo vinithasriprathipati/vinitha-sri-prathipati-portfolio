@@ -15,7 +15,7 @@ const Experience = () => {
     {
       title: "Data Analyst Intern",
       company: "Technical Hub",
-      period: "Project-based",
+      period: "June 3 to July 27, 2024",
       description: "Built comprehensive real-time dashboards using Power BI to analyze and visualize data insights.",
       skills: ["Power BI", "Data Visualization", "Real-time Analytics", "Dashboard Design"]
     }
