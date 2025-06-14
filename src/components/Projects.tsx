@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Code, BarChart3, FileText } from "lucide-react";
@@ -13,7 +12,7 @@ const Projects = () => {
       highlights: ["Role-based Access", "Shared Data Model", "Real-time Updates"]
     },
     {
-      title: "LinkedIn Data Analysis Dashboard",
+      title: "Technical Hub",
       icon: <BarChart3 className="w-8 h-8" />,
       description: "Developed a real-time Power BI dashboard analyzing LinkedIn connections, engagement metrics, and post performance data. Provides actionable insights for professional networking strategy.",
       techStack: ["Power BI", "Real-time Analytics", "Data Visualization", "LinkedIn API"],
