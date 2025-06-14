@@ -11,6 +11,13 @@ const Experience = () => {
       period: "Feb 2025 – Present",
       description: "Working on enterprise solutions using Pega platform to develop scalable business applications.",
       skills: ["Pega", "Enterprise Solutions", "Low-Code Development"]
+    },
+    {
+      title: "Data Analyst Intern",
+      company: "LinkedIn Project (iShip Program)",
+      period: "Project-based",
+      description: "Built comprehensive real-time dashboards using Power BI to analyze and visualize data insights.",
+      skills: ["Power BI", "Data Visualization", "Real-time Analytics", "Dashboard Design"]
     }
   ];
 
