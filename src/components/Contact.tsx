@@ -110,7 +110,7 @@ const Contact = () => {
                 </div>
               </a>
               
-              <a href="https://github.com/VinithaSri" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
+              <a href="https://github.com/vinithasriprathipati" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
                 <Github className="w-6 h-6 text-primary" />
                 <div>
                   <div className="font-semibold text-gray-900">GitHub</div>
