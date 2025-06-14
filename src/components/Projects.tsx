@@ -40,9 +40,9 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
-              <CardHeader>
-                <div className="flex items-center space-x-3 mb-4">
+            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-3 mb-3">
                   <div className="text-primary">
                     {project.icon}
                   </div>
@@ -51,18 +51,18 @@ const Projects = () => {
                   </CardTitle>
                 </div>
               </CardHeader>
-              <CardContent className="flex flex-col h-full">
-                <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
+              <CardContent className="flex flex-col flex-grow pt-0">
+                <p className="text-gray-600 mb-4 leading-relaxed">
                   {project.description}
                 </p>
                 
-                <div className="space-y-4">
+                <div className="mt-auto space-y-4">
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Key Highlights:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Key Highlights:</h4>
                     <div className="space-y-1">
                       {project.highlights.map((highlight, highlightIndex) => (
                         <div key={highlightIndex} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-primary rounded-full"></div>
+                          <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
                           <span className="text-sm text-gray-600">{highlight}</span>
                         </div>
                       ))}
@@ -70,10 +70,10 @@ const Projects = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Tech Stack:</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Tech Stack:</h4>
+                    <div className="flex flex-wrap gap-1.5">
                       {project.techStack.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary" className="text-xs">
+                        <Badge key={techIndex} variant="secondary" className="text-xs px-2 py-1">
                           {tech}
                         </Badge>
                       ))}
