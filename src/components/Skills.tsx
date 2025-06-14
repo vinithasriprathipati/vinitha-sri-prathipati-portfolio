@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Workflow, BarChart3, GitBranch, Zap } from "lucide-react";
@@ -14,7 +13,7 @@ const Skills = () => {
     {
       title: "Data Analytics",
       icon: <BarChart3 className="w-8 h-8" />,
-      skills: ["Power BI", "Microsoft Fabric", "SQL"],
+      skills: ["Power BI", "Microsoft Fabric"],
       color: "text-green-600"
     },
     {
@@ -26,7 +25,7 @@ const Skills = () => {
     {
       title: "Other Tools",
       icon: <Database className="w-8 h-8" />,
-      skills: ["Apache Spark", "GitHub"],
+      skills: ["Apache Spark", "GitHub", "SQL"],
       color: "text-orange-600"
     },
     {
