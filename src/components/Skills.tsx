@@ -14,7 +14,7 @@ const Skills = () => {
     {
       title: "Data Analytics",
       icon: <BarChart3 className="w-8 h-8" />,
-      skills: ["Power BI", "Microsoft Fabric"],
+      skills: ["Power BI", "Microsoft Fabric", "SQL"],
       color: "text-green-600"
     },
     {
