@@ -1,27 +1,21 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-
 const Hero = () => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center gradient-bg">
+  return <section id="home" className="min-h-screen flex items-center justify-center gradient-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           {/* Profile Picture */}
           <div className="mb-8">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
-                alt="Vinitha Sri Prathipati"
-                className="w-full h-full object-cover"
-              />
+              <img alt="Vinitha Sri Prathipati" src="/lovable-uploads/6ec763eb-05b4-42a5-81d6-89fef89564dc.png" className="w-full h-full object-cover" />
             </div>
           </div>
           
@@ -40,25 +34,16 @@ const Hero = () => {
           </p>
           
           {/* CTA Button */}
-          <Button 
-            onClick={scrollToAbout}
-            size="lg"
-            className="gradient-primary text-white text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-          >
+          <Button onClick={scrollToAbout} size="lg" className="gradient-primary text-white text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             Discover My Journey
           </Button>
         </div>
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown 
-            className="w-8 h-8 text-primary cursor-pointer"
-            onClick={scrollToAbout}
-          />
+          <ChevronDown className="w-8 h-8 text-primary cursor-pointer" onClick={scrollToAbout} />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
