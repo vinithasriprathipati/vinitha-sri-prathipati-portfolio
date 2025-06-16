@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ExternalLink, Code, BarChart3, FileText } from "lucide-react";
 
 const Projects = () => {
@@ -10,14 +11,16 @@ const Projects = () => {
       icon: <BarChart3 className="w-8 h-8" />,
       description: "Analyzed AP EAPCET counseling data and developed interactive dashboards to identify key trends. Used DAX functions and Power Query to process and visualize real-time data, improving decision-making speed by 40%.",
       techStack: ["Power BI", "DAX", "Power Query"],
-      highlights: ["Real-time Data Processing", "40% Faster Decision Making", "Interactive Dashboards"]
+      highlights: ["Real-time Data Processing", "40% Faster Decision Making", "Interactive Dashboards"],
+      link: "https://github.com/vinithasriprathipati/ap-eapcet-analysis"
     },
     {
       title: "Olympics 2024 Data Analysis",
       icon: <BarChart3 className="w-8 h-8" />,
       description: "Conducted in-depth analysis of 5000+ Olympic records. Built 5+ dashboards to visualize athlete performance and event trends with real-time data updates, increasing analytics accuracy by 25%.",
       techStack: ["Power BI", "Data Visualization", "Real-time Analytics"],
-      highlights: ["5000+ Records Analyzed", "5+ Interactive Dashboards", "25% Increased Accuracy"]
+      highlights: ["5000+ Records Analyzed", "5+ Interactive Dashboards", "25% Increased Accuracy"],
+      link: "https://github.com/vinithasriprathipati/olympics-2024-analysis"
     }
   ];
 
@@ -71,6 +74,23 @@ const Projects = () => {
                         </Badge>
                       ))}
                     </div>
+                  </div>
+                  
+                  <div className="pt-2">
+                    <Button 
+                      asChild
+                      className="w-full gradient-primary text-white"
+                    >
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center space-x-2"
+                      >
+                        <span>View Project</span>
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </CardContent>
