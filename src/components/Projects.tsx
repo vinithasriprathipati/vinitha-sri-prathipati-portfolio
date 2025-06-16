@@ -12,7 +12,7 @@ const Projects = () => {
       description: "Analyzed AP EAPCET counseling data and developed interactive dashboards to identify key trends. Used DAX functions and Power Query to process and visualize real-time data, improving decision-making speed by 40%.",
       techStack: ["Power BI", "DAX", "Power Query"],
       highlights: ["Real-time Data Processing", "40% Faster Decision Making", "Interactive Dashboards"],
-      link: "https://github.com/vinithasriprathipati/ap-eapcet-analysis"
+      link: "https://app.powerbi.com/reportEmbed?reportId=6625803f-2920-422a-85cf-48bdbf04b316&autoAuth=true&ctid=7359f896-71e2-4dae-b8a3-15cdf97f2f10&navContentPaneEnabled=false"
     },
     {
       title: "Olympics 2024 Data Analysis",
@@ -20,7 +20,7 @@ const Projects = () => {
       description: "Conducted in-depth analysis of 5000+ Olympic records. Built 5+ dashboards to visualize athlete performance and event trends with real-time data updates, increasing analytics accuracy by 25%.",
       techStack: ["Power BI", "Data Visualization", "Real-time Analytics"],
       highlights: ["5000+ Records Analyzed", "5+ Interactive Dashboards", "25% Increased Accuracy"],
-      link: "https://github.com/vinithasriprathipati/olympics-2024-analysis"
+      link: "https://app.powerbi.com/reportEmbed?reportId=9eef3638-ed6c-464d-9c2a-762ab26b050a&autoAuth=true&ctid=7359f896-71e2-4dae-b8a3-15cdf97f2f10&navContentPaneEnabled=false"
     }
   ];
 
