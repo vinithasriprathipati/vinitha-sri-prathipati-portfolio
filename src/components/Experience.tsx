@@ -1,7 +1,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Briefcase, Calendar, ExternalLink } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
@@ -10,14 +11,16 @@ const Experience = () => {
       company: "Areteans",
       period: "Jan 2025 to Present",
       description: "Working on enterprise solutions using Pega platform to develop scalable business applications.",
-      skills: ["Pega", "Enterprise Solutions", "Low-Code Development"]
+      skills: ["Pega", "Enterprise Solutions", "Low-Code Development"],
+      completionLetter: "https://drive.google.com/file/d/15oY5fOGFro15WdZVdTw6rloCC7LS5D1U/view?usp=sharing"
     },
     {
       title: "Data Analyst Intern",
       company: "Technical Hub",
       period: "June 3 to July 27, 2024",
       description: "Built comprehensive real-time dashboards using Power BI to analyze and visualize data insights.",
-      skills: ["Power BI", "Data Visualization", "Real-time Analytics", "Dashboard Design"]
+      skills: ["Power BI", "Data Visualization", "Real-time Analytics", "Dashboard Design"],
+      completionLetter: "https://drive.google.com/file/d/1d-cRNq5w3umf72kdcVRCfkSQXXUhFUhn/view?usp=sharing"
     }
   ];
 
@@ -53,12 +56,30 @@ const Experience = () => {
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {exp.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {exp.skills.map((skill, skillIndex) => (
                     <Badge key={skillIndex} variant="secondary" className="bg-primary/10 text-primary">
                       {skill}
                     </Badge>
                   ))}
+                </div>
+                
+                <div className="pt-2">
+                  <Button 
+                    asChild
+                    className="gradient-primary text-white"
+                    size="sm"
+                  >
+                    <a 
+                      href={exp.completionLetter} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2"
+                    >
+                      <span>View Completion Letter</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
