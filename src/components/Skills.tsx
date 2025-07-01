@@ -1,6 +1,7 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Database, Workflow, BarChart3, GitBranch, Zap } from "lucide-react";
+import { Code, Database, Workflow, BarChart3, GitBranch, Zap, Globe } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -19,8 +20,14 @@ const Skills = () => {
     {
       title: "Programming",
       icon: <Code className="w-8 h-8" />,
-      skills: ["Java", "Python", "HTML", "CSS"],
+      skills: ["Java", "Python"],
       color: "text-purple-600"
+    },
+    {
+      title: "Web Technologies",
+      icon: <Globe className="w-8 h-8" />,
+      skills: ["HTML", "CSS"],
+      color: "text-indigo-600"
     },
     {
       title: "Other Tools",
