@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -26,6 +25,13 @@ const Certifications = () => {
       type: "Programming Certification",
       icon: <BadgeCheck className="w-6 h-6" />,
       link: "https://drive.google.com/file/d/1TiZiRSuN5iwfYlm-NZtFeFkFo3CNcBLV/view?usp=sharing"
+    },
+    {
+      title: "HTML & CSS IT Specialist",
+      issuer: "Industry Standard",
+      type: "Programming Certification",
+      icon: <BadgeCheck className="w-6 h-6" />,
+      link: "https://drive.google.com/file/d/1GrCFzZA7JE8JNibBUSxbUMhP0BIXghXx/view?usp=sharing"
     }
   ];
 
