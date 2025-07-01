@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Workflow, BarChart3, GitBranch, Zap } from "lucide-react";
@@ -20,7 +19,7 @@ const Skills = () => {
     {
       title: "Programming",
       icon: <Code className="w-8 h-8" />,
-      skills: ["Java", "Python"],
+      skills: ["Java", "Python", "HTML", "CSS"],
       color: "text-purple-600"
     },
     {
