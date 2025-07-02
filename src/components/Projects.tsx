@@ -20,7 +20,7 @@ const Projects = () => {
       description: "Conducted in-depth analysis of 5000+ Olympic records. Built 5+ dashboards to visualize athlete performance and event trends with real-time data updates, increasing analytics accuracy by 25%.",
       techStack: ["Power BI", "Data Visualization", "Real-time Analytics"],
       highlights: ["5000+ Records Analyzed", "5+ Interactive Dashboards", "25% Increased Accuracy"],
-      link: "https://app.powerbi.com/reportEmbed?reportId=9eef3638-ed6c-464d-9c2a-762ab26b050a&autoAuth=true&ctid=7359f896-71e2-4dae-b8a3-15cdf97f2f10&navContentPaneEnabled=false"
+      link: "https://github.com/vinithasriprathipati/paris-2024-olympics-dashboard"
     }
   ];
 
