@@ -7,12 +7,12 @@ import { ExternalLink, Code, BarChart3, FileText } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "AP EAPCET Counseling Analysis 2024",
+      title: "HR Job Opening Analysis",
       icon: <BarChart3 className="w-8 h-8" />,
-      description: "Analyzed AP EAPCET counseling data and developed interactive dashboards to identify key trends. Used DAX functions and Power Query to process and visualize real-time data, improving decision-making speed by 40%.",
-      techStack: ["Power BI", "DAX", "Power Query"],
-      highlights: ["Real-time Data Processing", "40% Faster Decision Making", "Interactive Dashboards"],
-      link: "https://app.powerbi.com/reportEmbed?reportId=6625803f-2920-422a-85cf-48bdbf04b316&autoAuth=true&ctid=7359f896-71e2-4dae-b8a3-15cdf97f2f10&navContentPaneEnabled=false"
+      description: "Analyzed HR job opening data to identify hiring trends and patterns. Developed comprehensive dashboards using advanced analytics to visualize recruitment metrics, improving hiring efficiency by 35%.",
+      techStack: ["Power BI", "Excel", "Data Analytics"],
+      highlights: ["Hiring Efficiency Improved by 35%", "Comprehensive Recruitment Metrics", "Advanced Analytics Implementation"],
+      link: "#"
     },
     {
       title: "Olympics 2024 Data Analysis",
