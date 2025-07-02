@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,7 +11,7 @@ const Projects = () => {
       description: "Analyzed 100+ job records covering departments, seniority levels, salary trends, and hiring timelines. Built 5+ interactive dashboards to visualize workforce demand, department-wise openings, and hiring efficiency, improving recruitment visibility by 30%.",
       techStack: ["Power BI", "Excel", "Data Analytics"],
       highlights: ["100+ Job Records Analyzed", "5+ Interactive Dashboards", "30% Improved Recruitment Visibility"],
-      link: "#"
+      link: "https://github.com/vinithasriprathipati/hr_job_openings_dashboard"
     },
     {
       title: "Olympics 2024 Data Analysis",
