@@ -9,9 +9,9 @@ const Projects = () => {
     {
       title: "HR Job Opening Analysis",
       icon: <BarChart3 className="w-8 h-8" />,
-      description: "Analyzed HR job opening data to identify hiring trends and patterns. Developed comprehensive dashboards using advanced analytics to visualize recruitment metrics, improving hiring efficiency by 35%.",
+      description: "Analyzed 100+ job records covering departments, seniority levels, salary trends, and hiring timelines. Built 5+ interactive dashboards to visualize workforce demand, department-wise openings, and hiring efficiency, improving recruitment visibility by 30%.",
       techStack: ["Power BI", "Excel", "Data Analytics"],
-      highlights: ["Hiring Efficiency Improved by 35%", "Comprehensive Recruitment Metrics", "Advanced Analytics Implementation"],
+      highlights: ["100+ Job Records Analyzed", "5+ Interactive Dashboards", "30% Improved Recruitment Visibility"],
       link: "#"
     },
     {
