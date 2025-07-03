@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,6 +13,14 @@ const Projects = () => {
       techStack: ["Power BI", "Excel", "Data Analytics"],
       highlights: ["100+ Job Records Analyzed", "5+ Interactive Dashboards", "30% Improved Recruitment Visibility"],
       link: "https://github.com/vinithasriprathipati/hr_job_openings_dashboard"
+    },
+    {
+      title: "Academic Pulse: Student Performance Dashboard",
+      icon: <BarChart3 className="w-8 h-8" />,
+      description: "Monitored and analyzed student marks, attendance, and academic progress across departments and roles. Built 5+ interactive dashboards with role-specific views for students, faculty, and parents, enhancing academic visibility and enabling timely interventions with a 35% improvement in performance tracking.",
+      techStack: ["Power BI", "Data Modeling", "Row-Level Security", "Data Analytics"],
+      highlights: ["5000+ Student Records Analyzed", "Role-Specific Interactive Dashboards", "35% Improved Academic Performance Tracking"],
+      link: "#"
     },
     {
       title: "Olympics 2024 Data Analysis",
@@ -33,7 +42,7 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
               <CardHeader className="pb-4">
@@ -41,13 +50,13 @@ const Projects = () => {
                   <div className="text-primary">
                     {project.icon}
                   </div>
-                  <CardTitle className="text-xl text-gray-900">
+                  <CardTitle className="text-lg text-gray-900">
                     {project.title}
                   </CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="flex flex-col flex-grow pt-0">
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 
