@@ -14,7 +14,7 @@ const Projects = () => {
       link: "https://github.com/vinithasriprathipati/hr_job_openings_dashboard"
     },
     {
-      title: "Academic Pulse: Student Performance Dashboard",
+      title: "Academic Pulse",
       icon: <BarChart3 className="w-8 h-8" />,
       description: "Analyzed 5000+ student records covering marks, attendance, and academic progress across departments and roles. Built 5+ interactive dashboards with role-specific views for students, faculty, and parents to visualize academic trends, enabling timely interventions and improving performance tracking by 35%.",
       techStack: ["Power BI", "Data Modeling", "Data Analytics"],
