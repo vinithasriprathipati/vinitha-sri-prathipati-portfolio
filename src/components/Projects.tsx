@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "Academic Pulse: Student Performance Dashboard",
       icon: <BarChart3 className="w-8 h-8" />,
-      description: "Monitored and analyzed student marks, attendance, and academic progress across departments and roles. Built 5+ interactive dashboards with role-specific views for students, faculty, and parents, enhancing academic visibility and enabling timely interventions with a 35% improvement in performance tracking.",
+      description: "Analyzed 5000+ student records covering marks, attendance, and academic progress across departments and roles. Built 5+ interactive dashboards with role-specific views for students, faculty, and parents to visualize academic trends, enabling timely interventions and improving performance tracking by 35%.",
       techStack: ["Power BI", "Data Modeling", "Data Analytics"],
       highlights: ["5000+ Student Records Analyzed", "Role-Specific Interactive Dashboards", "35% Improved Academic Performance Tracking"],
       link: "https://github.com/vinithasriprathipati/academic_pulse"
