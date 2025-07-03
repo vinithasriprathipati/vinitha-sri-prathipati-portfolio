@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -20,7 +19,7 @@ const Projects = () => {
       description: "Monitored and analyzed student marks, attendance, and academic progress across departments and roles. Built 5+ interactive dashboards with role-specific views for students, faculty, and parents, enhancing academic visibility and enabling timely interventions with a 35% improvement in performance tracking.",
       techStack: ["Power BI", "Data Modeling", "Row-Level Security", "Data Analytics"],
       highlights: ["5000+ Student Records Analyzed", "Role-Specific Interactive Dashboards", "35% Improved Academic Performance Tracking"],
-      link: "#"
+      link: "https://github.com/vinithasriprathipati/academic_pulse"
     },
     {
       title: "Olympics 2024 Data Analysis",
