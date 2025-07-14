@@ -10,6 +10,6 @@ This space highlights my selected work in:
 Each project demonstrates practical problem-solving skills, real-world use cases, and tools I’ve worked with during internships, certifications, and academic work.
 
 🌐 **Visit My Portfolio Website:**  
-[https://vinitha-sri-prathipati-portfolio.lovable.app/](https://vinitha-sri-prathipati-portfolio.lovable.app/)
+[https://vinithachowdary.lovable.app/]
 
 Thank you for visiting!
