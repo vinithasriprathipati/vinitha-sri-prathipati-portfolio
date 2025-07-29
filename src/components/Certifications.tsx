@@ -14,7 +14,7 @@ const Certifications = () => {
     },
     {
       title: "Certified Pega System Architect",
-      issuer: "Pega",
+      issuer: "Pega Academy",
       type: "Professional Certification",
       icon: <Award className="w-6 h-6" />,
       link: "https://drive.google.com/file/d/1DvscpTPYQBa9iWGVXqwSzxammM5YOM3o/view?usp=sharing"
