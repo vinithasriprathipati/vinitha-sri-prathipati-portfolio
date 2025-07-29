@@ -13,6 +13,13 @@ const Certifications = () => {
       link: "https://learn.microsoft.com/api/credentials/share/en-us/22A91A12C2-7356/9292326BA2D04A81?sharingId=DBB75A6B8CCA4219"
     },
     {
+      title: "Certified Pega System Architect",
+      issuer: "Pega",
+      type: "Professional Certification",
+      icon: <Award className="w-6 h-6" />,
+      link: "https://drive.google.com/file/d/1DvscpTPYQBa9iWGVXqwSzxammM5YOM3o/view?usp=sharing"
+    },
+    {
       title: "Java IT Specialist",
       issuer: "Industry Standard",
       type: "Programming Certification",
