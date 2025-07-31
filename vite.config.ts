@@ -1,24 +1,19 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";https://github.com/vinithasriprathipati/vinitha-sri-prathipati-portfolio
+import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// 👇 Change this to your GitHub repo name
-const repoName = "vinitha-sri-prathipati-portfolio";
-
+// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: `/${repoName}/`, // ✅ this is essential for GitHub Pages
-
   server: {
     host: "::",
     port: 8080,
   },
-
   plugins: [
     react(),
-    mode === "development" && componentTagger(),
+    mode === 'development' &&
+    componentTagger(),
   ].filter(Boolean),
-
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
