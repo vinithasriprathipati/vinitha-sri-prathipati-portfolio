@@ -27,6 +27,12 @@ const Contact = () => {
     
     try {
       console.log('Sending email with data:', formData);
+      console.log('EmailJS config:', { serviceId, templateId, publicKey });
+      
+      // Validate form data
+      if (!formData.name || !formData.email || !formData.message) {
+        throw new Error('All fields are required');
+      }
       
       // Send email using EmailJS
       const result = await emailjs.send(
