@@ -22,7 +22,7 @@ const Contact = () => {
     setIsSubmitting(true);
     
     // Your EmailJS configuration
-    const serviceId = 'service_f5aq94d';
+    const serviceId = 'service_yyo522q';
     const templateId = 'template_ht2visf';
     const publicKey = 'LmkQsiXufy_G9um3x';
     
