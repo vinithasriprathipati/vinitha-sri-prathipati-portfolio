@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white shadow-2xl">
               <img 
                 alt="Vinitha Sri Prathipati" 
-                src="/lovable-uploads/6ec763eb-05b4-42a5-81d6-89fef89564dc.png" 
+                src="/lovable-uploads/a753d7be-0b25-449a-aebb-cf049785fe6a.png" 
                 className="w-full h-full object-cover" 
               />
             </div>
