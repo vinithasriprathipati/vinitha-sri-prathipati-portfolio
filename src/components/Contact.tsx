@@ -11,6 +11,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,19 +31,20 @@ const Contact = () => {
       console.log('EmailJS config:', { serviceId, templateId, publicKey });
       
       // Validate form data
-      if (!formData.name || !formData.email || !formData.message) {
+      if (!formData.name || !formData.email || !formData.subject || !formData.message) {
         throw new Error('All fields are required');
       }
       
-      // Send email using EmailJS
+      // Send email using EmailJS with template variables
       const result = await emailjs.send(
         serviceId,
         templateId,
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
           message: formData.message,
-          to_email: 'vinithasriprathipati@gmail.com'
+          sent_date: new Date().toLocaleString()
         },
         publicKey
       );
@@ -56,6 +58,7 @@ const Contact = () => {
       setFormData({
         name: '',
         email: '',
+        subject: '',
         message: ''
       });
     } catch (error) {
@@ -162,6 +165,23 @@ const Contact = () => {
                     onChange={handleChange} 
                     className="w-full" 
                     placeholder="your.email@example.com"
+                    disabled={isSubmitting}
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                    Subject
+                  </label>
+                  <Input 
+                    id="subject" 
+                    name="subject" 
+                    type="text" 
+                    required 
+                    value={formData.subject} 
+                    onChange={handleChange} 
+                    className="w-full" 
+                    placeholder="What's this about?"
                     disabled={isSubmitting}
                   />
                 </div>
