@@ -36,11 +36,11 @@ const Experience = () => {
         
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={index} className="shadow-lg card-hover glow-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-center space-x-3">
-                    <Briefcase className="w-6 h-6 text-primary" />
+                    <Briefcase className="w-6 h-6 text-primary icon-hover" />
                     <div>
                       <CardTitle className="text-xl text-gray-900">{exp.title}</CardTitle>
                       <div className="text-primary font-semibold">{exp.company}</div>
@@ -58,7 +58,7 @@ const Experience = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {exp.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="bg-primary/10 text-primary">
+                    <Badge key={skillIndex} variant="secondary" className="bg-primary/10 text-primary badge-hover">
                       {skill}
                     </Badge>
                   ))}
@@ -67,7 +67,7 @@ const Experience = () => {
                 <div className="pt-2">
                   <Button 
                     asChild
-                    className="gradient-primary text-white"
+                    className="gradient-primary text-white button-hover"
                     size="sm"
                   >
                     <a 

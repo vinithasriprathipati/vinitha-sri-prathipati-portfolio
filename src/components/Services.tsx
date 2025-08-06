@@ -30,10 +30,10 @@ const Services = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <Card key={index} className="shadow-lg card-hover glow-hover">
               <CardHeader>
                 <div className="flex items-center space-x-4">
-                  <div className="text-primary">
+                  <div className="text-primary icon-hover">
                     {service.icon}
                   </div>
                   <CardTitle className="text-2xl text-gray-900">

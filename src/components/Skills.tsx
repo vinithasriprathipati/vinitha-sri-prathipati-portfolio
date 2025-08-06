@@ -55,10 +55,10 @@ const Skills = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <Card key={index} className="shadow-lg card-hover glow-hover">
               <CardContent className="p-6">
                 <div className="text-center mb-4">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4 ${category.color}`}>
+                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4 ${category.color} icon-hover`}>
                     {category.icon}
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -71,7 +71,7 @@ const Skills = () => {
                     <Badge 
                       key={skillIndex} 
                       variant="outline"
-                      className="border-primary text-primary hover:bg-primary hover:text-white transition-colors"
+                      className="border-primary text-primary hover:bg-primary hover:text-white transition-colors badge-hover"
                     >
                       {skill}
                     </Badge>

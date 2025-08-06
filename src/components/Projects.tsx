@@ -43,10 +43,10 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+            <Card key={index} className="shadow-lg card-hover glow-hover flex flex-col">
               <CardHeader className="pb-4">
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="text-primary">
+                  <div className="text-primary icon-hover">
                     {project.icon}
                   </div>
                   <CardTitle className="text-lg text-gray-900">
@@ -76,7 +76,7 @@ const Projects = () => {
                     <h4 className="font-semibold text-gray-900 mb-2 text-sm">Tech Stack:</h4>
                     <div className="flex flex-wrap gap-1.5">
                       {project.techStack.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary" className="text-xs px-2 py-1">
+                        <Badge key={techIndex} variant="secondary" className="text-xs px-2 py-1 badge-hover">
                           {tech}
                         </Badge>
                       ))}
@@ -86,7 +86,7 @@ const Projects = () => {
                   <div className="pt-2">
                     <Button 
                       asChild
-                      className="w-full gradient-primary text-white"
+                      className="w-full gradient-primary text-white button-hover"
                     >
                       <a 
                         href={project.link} 

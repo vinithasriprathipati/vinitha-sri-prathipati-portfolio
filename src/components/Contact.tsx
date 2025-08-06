@@ -102,7 +102,7 @@ const Contact = () => {
             </div>
             
             <div className="space-y-4">
-              <a href="mailto:vinithachowdary06@gmail.com" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
+              <a href="mailto:vinithachowdary06@gmail.com" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md box-hover">
                 <Mail className="w-6 h-6 text-primary" />
                 <div>
                   <div className="font-semibold text-gray-900">Email</div>
@@ -110,7 +110,7 @@ const Contact = () => {
                 </div>
               </a>
               
-              <a href="https://www.linkedin.com/in/vinitha-chowdary-203232258/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
+              <a href="https://www.linkedin.com/in/vinitha-chowdary-203232258/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md box-hover">
                 <Linkedin className="w-6 h-6 text-primary" />
                 <div>
                   <div className="font-semibold text-gray-900">LinkedIn</div>
@@ -118,7 +118,7 @@ const Contact = () => {
                 </div>
               </a>
               
-              <a href="https://github.com/vinithasriprathipati" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
+              <a href="https://github.com/vinithasriprathipati" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-md box-hover">
                 <Github className="w-6 h-6 text-primary" />
                 <div>
                   <div className="font-semibold text-gray-900">GitHub</div>
@@ -129,7 +129,7 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <Card className="shadow-lg">
+          <Card className="shadow-lg card-hover glow-hover">
             <CardHeader>
               <CardTitle className="text-2xl text-gray-900">Send a Message</CardTitle>
             </CardHeader>
@@ -205,7 +205,7 @@ const Contact = () => {
                 
                 <Button 
                   type="submit" 
-                  className="w-full gradient-primary text-white" 
+                  className="w-full gradient-primary text-white button-hover" 
                   size="lg"
                   disabled={isSubmitting}
                 >

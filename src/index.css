@@ -112,4 +112,29 @@
   .gradient-bg {
     background: linear-gradient(135deg, hsl(var(--tech-light)) 0%, rgba(255,255,255,0.5) 100%);
   }
+
+  /* Enhanced hover effects for all interactive elements */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-3 hover:scale-105;
+  }
+
+  .box-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-accent/5;
+  }
+
+  .button-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+
+  .badge-hover {
+    @apply transition-all duration-300 hover:scale-110 hover:shadow-md;
+  }
+
+  .icon-hover {
+    @apply transition-all duration-300 hover:scale-125 hover:rotate-6;
+  }
+
+  .glow-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20;
+  }
 }
