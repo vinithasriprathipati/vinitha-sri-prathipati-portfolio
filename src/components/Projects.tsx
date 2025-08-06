@@ -1,10 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Code, BarChart3, FileText } from "lucide-react";
+import { ExternalLink, Code, BarChart3, FileText, Users } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Campus Placement System",
+      icon: <Users className="w-8 h-8" />,
+      description: "Developed a Pega Constellation-based application to automate campus recruitment processes. Designed and implemented workflows for student registration, job postings, eligibility filtering, and interview scheduling, improving placement coordination and reducing manual effort by 40%.",
+      techStack: ["Pega Constellation", "Workflow Automation", "Role-Based Dashboards"],
+      highlights: ["Automated Student Registration & Job Posting", "Eligibility-Based Candidate Filtering", "40% Reduction in Manual Processing Time"],
+      link: "https://github.com/vinithasriprathipati/campus_placement"
+    },
     {
       title: "HR Job Opening Analysis",
       icon: <BarChart3 className="w-8 h-8" />,
