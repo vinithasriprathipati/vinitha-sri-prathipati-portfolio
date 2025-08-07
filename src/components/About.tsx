@@ -65,7 +65,7 @@ const About = () => {
                   
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                      Intermediate
+                      Intermediate (MPC)
                     </h4>
                     <div className="text-primary font-medium">
                       Aditya Junior College
