@@ -59,7 +59,7 @@ const About = () => {
                       Aditya University
                     </div>
                     <div className="text-gray-600">
-                      Expected 2026
+                      2022 - 2026
                     </div>
                   </div>
                   
