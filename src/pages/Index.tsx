@@ -1,5 +1,6 @@
 
 import Navigation from "@/components/Navigation";
+import BackgroundAnimation from "@/components/BackgroundAnimation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -12,7 +13,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <BackgroundAnimation />
       <Navigation />
       <Hero />
       <About />

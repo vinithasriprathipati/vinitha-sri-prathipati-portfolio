@@ -137,4 +137,47 @@
   .glow-hover {
     @apply transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20;
   }
+
+  /* Background Animation Keyframes */
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    33% { transform: translateY(-15px) translateX(10px); }
+    66% { transform: translateY(10px) translateX(-10px); }
+  }
+
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(90deg); }
+    50% { transform: translateY(5px) rotate(180deg); }
+    75% { transform: translateY(-5px) rotate(270deg); }
+  }
+
+  .animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+  }
+
+  .animate-float-medium {
+    animation: float-medium 4s ease-in-out infinite;
+  }
+
+  .animate-float-fast {
+    animation: float-fast 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  .animate-pulse-slower {
+    animation: pulse 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slowest {
+    animation: pulse 8s ease-in-out infinite;
+  }
 }
