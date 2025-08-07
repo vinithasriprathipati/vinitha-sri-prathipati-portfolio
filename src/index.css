@@ -180,4 +180,18 @@
   .animate-pulse-slowest {
     animation: pulse 8s ease-in-out infinite;
   }
+
+  /* Education Flowchart Styles */
+  .education-box {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .education-box:hover {
+    transform: translateY(-2px);
+  }
+
+  .education-box:hover .bg-gradient-to-r {
+    box-shadow: 0 8px 25px -5px rgba(var(--primary), 0.3);
+  }
 }
