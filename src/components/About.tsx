@@ -50,7 +50,7 @@ const About = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">
                       B.Tech in Information Technology
@@ -60,6 +60,30 @@ const About = () => {
                     </div>
                     <div className="text-gray-600">
                       Expected 2026
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                      Intermediate
+                    </h4>
+                    <div className="text-primary font-medium">
+                      Aditya Junior College
+                    </div>
+                    <div className="text-gray-600">
+                      2020 - 2022
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                      10th Grade
+                    </h4>
+                    <div className="text-primary font-medium">
+                      Sri Prakash Synergy School
+                    </div>
+                    <div className="text-gray-600">
+                      2020
                     </div>
                   </div>
                 </div>
