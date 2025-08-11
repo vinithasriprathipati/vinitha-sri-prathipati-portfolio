@@ -10,7 +10,7 @@ const Certifications = () => {
       issuer: "Microsoft",
       type: "Professional Certification",
       icon: <Award className="w-6 h-6" />,
-      link: "https://learn.microsoft.com/api/credentials/share/en-us/22A91A12C2-7356/9292326BA2D04A81?sharingId=DBB75A6B8CCA4219"
+      link: "https://drive.google.com/file/d/1coJxdnQMU_JX3uqfOenQMYfbad_CKYw6/view?usp=sharing"
     },
     {
       title: "Certified Pega System Architect",
