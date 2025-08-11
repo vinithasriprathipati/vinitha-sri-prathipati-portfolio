@@ -72,7 +72,13 @@ const Hero = () => {
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-primary cursor-pointer" onClick={scrollToAbout} />
+          <button
+            onClick={scrollToAbout}
+            className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-3 hover:bg-white/30 transition-all duration-300 hover:scale-110 shadow-lg"
+            aria-label="Scroll to About section"
+          >
+            <ChevronDown className="w-6 h-6 text-primary" />
+          </button>
         </div>
       </div>
     </section>
