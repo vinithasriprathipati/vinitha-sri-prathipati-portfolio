@@ -9,7 +9,7 @@ const Experience = () => {
     {
       title: "Apprentice",
       company: "Areteans",
-      period: "Jan 2025 to Present",
+      period: "Jan 2025 to June 2025",
       description: "Working on enterprise solutions using Pega platform to develop scalable business applications.",
       skills: ["Pega", "Enterprise Solutions", "Low-Code Development"],
       completionLetter: "https://drive.google.com/file/d/1oFSvbFDjlVN7_utBEJdIRojgGBal7Esv/view?usp=sharing"
@@ -17,7 +17,7 @@ const Experience = () => {
     {
       title: "Data Analyst Intern",
       company: "Technical Hub",
-      period: "June 3 to July 27, 2024",
+      period: "June 2024 to July 2024",
       description: "Built comprehensive real-time dashboards using Power BI to analyze and visualize data insights.",
       skills: ["Power BI", "Data Visualization", "Real-time Analytics", "Dashboard Design"],
       completionLetter: "https://drive.google.com/file/d/1d-cRNq5w3umf72kdcVRCfkSQXXUhFUhn/view?usp=sharing"
