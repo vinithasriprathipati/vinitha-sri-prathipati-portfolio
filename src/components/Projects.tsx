@@ -2,8 +2,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Code, BarChart3, FileText, Users } from "lucide-react";
+import { useInView } from "@/hooks/useInView";
 
 const Projects = () => {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [gridRef, gridInView] = useInView({ threshold: 0.1 });
   const projects = [
     {
       title: "Campus Placement System",
@@ -42,19 +45,25 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div ref={titleRef} className={`text-center mb-16 transition-all duration-1000 ${titleInView ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`}>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Real-world applications demonstrating expertise in data analytics and dashboard development
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="shadow-lg card-hover glow-hover flex flex-col">
+            <Card 
+              key={index} 
+              className={`shadow-lg card-hover glow-hover flex flex-col group transition-all duration-700 ${
+                gridInView ? 'animate-slide-up' : 'opacity-0 translate-y-12'
+              }`}
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
               <CardHeader className="pb-4">
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="text-primary icon-hover">
+                  <div className="text-primary icon-hover animate-float group-hover:animate-bounce-in">
                     {project.icon}
                   </div>
                   <CardTitle className="text-lg text-gray-900">

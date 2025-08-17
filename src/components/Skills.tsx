@@ -2,8 +2,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Workflow, BarChart3, GitBranch, Zap, Globe } from "lucide-react";
+import { useInView } from "@/hooks/useInView";
 
 const Skills = () => {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [gridRef, gridInView] = useInView({ threshold: 0.1 });
   const skillCategories = [
     {
       title: "Low-Code Development",
@@ -46,19 +49,25 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div ref={titleRef} className={`text-center mb-16 transition-all duration-1000 ${titleInView ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`}>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Technical Skills</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A comprehensive toolkit for data-driven solutions and automation
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="shadow-lg card-hover glow-hover">
+            <Card 
+              key={index} 
+              className={`shadow-lg card-hover glow-hover group transition-all duration-700 ${
+                gridInView ? 'animate-bounce-in' : 'opacity-0 scale-95'
+              }`}
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
               <CardContent className="p-6">
                 <div className="text-center mb-4">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4 ${category.color} icon-hover`}>
+                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4 ${category.color} icon-hover animate-float group-hover:animate-glow`}>
                     {category.icon}
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
