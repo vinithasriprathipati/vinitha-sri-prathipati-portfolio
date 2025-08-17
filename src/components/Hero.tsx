@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, FileText } from "lucide-react";
 
 const Hero = () => {
-  const scrollToHome = () => {
-    const homeSection = document.getElementById('home');
-    if (homeSection) {
-      homeSection.scrollIntoView({
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({
         behavior: 'smooth'
       });
     }
@@ -44,7 +44,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-slide-up" style={{ animationDelay: '0.9s' }}>
             <Button 
-              onClick={scrollToHome}
+              onClick={scrollToAbout}
               size="lg" 
               className="gradient-primary text-white text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-float hover:animate-glow"
             >
