@@ -46,7 +46,7 @@ const Hero = () => {
             <Button 
               onClick={scrollToAbout}
               size="lg" 
-              className="gradient-primary text-white text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-float hover:animate-glow"
+              className="gradient-primary text-white text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-float-slow hover:animate-glow"
             >
               Discover My Journey
             </Button>

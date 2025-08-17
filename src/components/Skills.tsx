@@ -67,7 +67,7 @@ const Skills = () => {
             >
               <CardContent className="p-6">
                 <div className="text-center mb-4">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4 ${category.color} icon-hover animate-float group-hover:animate-glow`}>
+                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4 ${category.color} icon-hover animate-float-slow group-hover:animate-glow`}>
                     {category.icon}
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
