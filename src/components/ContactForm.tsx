@@ -9,9 +9,8 @@ import emailjs from '@emailjs/browser';
 import { Mail, Send, Loader2 } from 'lucide-react';
 
 // EmailJS Configuration
-const EMAILJS_SERVICE_ID = 'service_yyo522q';
+const EMAILJS_SERVICE_ID = 'service_hrq6dkj';
 const EMAILJS_PUBLIC_KEY = 'K6Xh408RQGxuagThk';
-// You'll need to add your template ID here once you create it
 const EMAILJS_TEMPLATE_ID = 'template_gu41kgj';
 
 interface FormData {
