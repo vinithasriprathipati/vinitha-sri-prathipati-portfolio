@@ -19,33 +19,33 @@ const Projects = () => {
     {
       title: "Campus Placement System",
       icon: <Users className="w-8 h-8" />,
-      description: "Developed a Pega Constellation-based application to automate campus recruitment processes. Designed and implemented workflows for student registration, job postings, eligibility filtering, and interview scheduling, improving placement coordination and reducing manual effort by 40%.",
+      description: "Developed a Pega Constellation-based application to automate campus recruitment processes. Designed workflows for student registration, job postings, eligibility filtering, and interview scheduling, improving coordination and reducing manual effort by 40%.",
       techStack: ["Pega Constellation 24.2", "Workflow Automation", "Role-Based Dashboards"],
-      highlights: ["Automated Student Registration & Job Posting", "Eligibility-Based Candidate Filtering", "40% Reduction in Manual Processing Time"],
+      highlights: ["Automated Student Registration & Job Posting", "Eligibility-Based Candidate Filtering", "Streamlined Interview Scheduling", "40% Reduction in Manual Processing Time"],
       link: "https://github.com/vinithasriprathipati/campus_placement"
     },
     {
       title: "HR Job Opening Analysis",
       icon: <BarChart3 className="w-8 h-8" />,
-      description: "Analyzed 100+ job records covering departments, seniority levels, salary trends, and hiring timelines. Built 5+ interactive dashboards to visualize workforce demand, department-wise openings, and hiring efficiency, improving recruitment visibility by 30%.",
+      description: "Performed analysis on 100+ job records covering departments, seniority levels, salary trends, and hiring timelines. Built interactive dashboards to visualize workforce demand, department-wise openings, and hiring efficiency, improving recruitment visibility by 30%.",
       techStack: ["Power BI", "Excel", "Data Analytics"],
-      highlights: ["100+ Job Records Analyzed", "5+ Interactive Dashboards", "30% Improved Recruitment Visibility"],
+      highlights: ["100+ Job Records Analyzed", "Department & Seniority-Level Insights", "Salary & Hiring Timeline Trends", "30% Improved Recruitment Visibility"],
       link: "https://github.com/vinithasriprathipati/hr_job_openings_dashboard"
     },
     {
       title: "Academic Pulse",
       icon: <BarChart3 className="w-8 h-8" />,
-      description: "Analyzed 5000+ student records covering marks, attendance, and academic progress across departments and roles. Built 5+ interactive dashboards with role-specific views for students, faculty, and parents to visualize academic trends, enabling timely interventions and improving performance tracking by 35%.",
+      description: "Analyzed 5000+ student records on marks, attendance, and academic performance across departments and roles. Developed dashboards with role-specific views for students, faculty, and parents, enabling timely interventions and improving performance tracking by 35%.",
       techStack: ["Power BI", "Data Modeling", "Data Analytics"],
-      highlights: ["5000+ Student Records Analyzed", "Role-Specific Interactive Dashboards", "35% Improved Academic Performance Tracking"],
+      highlights: ["5000+ Student Records Analyzed", "Role-Specific Dashboards for Students, Faculty & Parents", "Academic Trends & Attendance Insights", "35% Improved Performance Tracking"],
       link: "https://github.com/vinithasriprathipati/academic_pulse"
     },
     {
       title: "Olympics 2024 Data Analysis",
       icon: <BarChart3 className="w-8 h-8" />,
-      description: "Conducted in-depth analysis of 5000+ Olympic records. Built 5+ dashboards to visualize athlete performance and event trends with real-time data updates, increasing analytics accuracy by 25%.",
-      techStack: ["Power BI", "Data Visualization", "Real-time Analytics"],
-      highlights: ["5000+ Records Analyzed", "5+ Interactive Dashboards", "25% Increased Accuracy"],
+      description: "Conducted analysis on 5000+ Olympic records to study athlete performance and event outcomes. Built dashboards with real-time data updates to visualize participation, performance, and country-wise trends, increasing analytics accuracy by 25%.",
+      techStack: ["Power BI", "Data Visualization", "Real-Time Analytics"],
+      highlights: ["5000+ Olympic Records Analyzed", "Athlete & Event Performance Trends", "Country-Wise Participation Insights", "25% Increased Analytics Accuracy"],
       link: "https://github.com/vinithasriprathipati/paris-2024-olympics-dashboard"
     }
   ];
