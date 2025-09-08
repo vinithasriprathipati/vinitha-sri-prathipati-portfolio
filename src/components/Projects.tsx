@@ -1,13 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Code, BarChart3, FileText, Users } from "lucide-react";
+import { ExternalLink, Code, BarChart3, FileText, Users, Package } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const Projects = () => {
   const [titleRef, titleInView] = useInView({ threshold: 0.2 });
   const [gridRef, gridInView] = useInView({ threshold: 0.1 });
   const projects = [
+    {
+      title: "Courier Connect",
+      icon: <Package className="w-8 h-8" />,
+      description: "Developed a Pega Constellation-based courier booking and delivery application to streamline end-to-end parcel management. Designed workflows for customer booking, admin approvals, pickup verification, and delivery tracking, enhancing efficiency and improving customer experience.",
+      techStack: ["Pega Constellation 24.2", "Workflow Automation", "Role-Based Portals & Dashboards"],
+      highlights: ["Automated Courier Booking with Instant Price Calculation", "Admin Dashboard for Approvals & Assignments", "Real-Time Notifications & Delivery Status Updates", "Improved Transparency and Faster Processing"],
+      link: "https://github.com/vinithasriprathipati/courier-connect"
+    },
     {
       title: "Campus Placement System",
       icon: <Users className="w-8 h-8" />,
