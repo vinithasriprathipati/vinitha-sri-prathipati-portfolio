@@ -63,7 +63,7 @@ const Projects = () => {
             >
               <CardHeader className="pb-4">
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="text-primary icon-hover animate-float group-hover:animate-bounce-in">
+                  <div className="text-primary icon-hover animate-float-slow group-hover:animate-glow">
                     {project.icon}
                   </div>
                   <CardTitle className="text-lg text-gray-900">
