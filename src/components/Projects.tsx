@@ -14,13 +14,13 @@ const Projects = () => {
       description: "Developed a Pega Constellation-based courier booking and delivery application to streamline end-to-end parcel management. Designed workflows for customer booking, admin approvals, pickup verification, and delivery tracking, enhancing efficiency and improving customer experience.",
       techStack: ["Pega Constellation 24.2", "Workflow Automation", "Role-Based Portals & Dashboards"],
       highlights: ["Automated Courier Booking with Instant Price Calculation", "Admin Dashboard for Approvals & Assignments", "Real-Time Notifications & Delivery Status Updates", "Improved Transparency and Faster Processing"],
-      link: "https://github.com/vinithasriprathipati/courier-connect"
+      link: "https://github.com/vinithasriprathipati/courier_connect"
     },
     {
       title: "Campus Placement System",
       icon: <Users className="w-8 h-8" />,
       description: "Developed a Pega Constellation-based application to automate campus recruitment processes. Designed and implemented workflows for student registration, job postings, eligibility filtering, and interview scheduling, improving placement coordination and reducing manual effort by 40%.",
-      techStack: ["Pega Constellation", "Workflow Automation", "Role-Based Dashboards"],
+      techStack: ["Pega Constellation 24.2", "Workflow Automation", "Role-Based Dashboards"],
       highlights: ["Automated Student Registration & Job Posting", "Eligibility-Based Candidate Filtering", "40% Reduction in Manual Processing Time"],
       link: "https://github.com/vinithasriprathipati/campus_placement"
     },
