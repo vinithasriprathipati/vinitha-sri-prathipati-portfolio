@@ -1,13 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Code, BarChart3, FileText, Users, Package } from "lucide-react";
+import { ExternalLink, Code, BarChart3, FileText, Users, Package, Utensils } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const Projects = () => {
   const [titleRef, titleInView] = useInView({ threshold: 0.2 });
   const [gridRef, gridInView] = useInView({ threshold: 0.1 });
   const projects = [
+    {
+      title: "Zestha - Authentic Italian Cuisine",
+      icon: <Utensils className="w-8 h-8" />,
+      description: "Developed a fully responsive restaurant website using HTML, CSS, and JavaScript to provide an elegant and interactive dining experience. Designed smooth animations, an intuitive layout, and interactive features for users to explore the menu, book tables, and contact the restaurant easily.",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      highlights: ["Responsive and Mobile-Friendly Design", "Dynamic Menu with Category Filtering", "Smooth Animations and Interactive UI", "Integrated Contact Form and Newsletter Signup"],
+      link: "https://vinithasriprathipati.github.io/zestha/"
+    },
     {
       title: "Courier Connect",
       icon: <Package className="w-8 h-8" />,
