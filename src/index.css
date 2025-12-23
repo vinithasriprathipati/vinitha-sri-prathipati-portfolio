@@ -181,39 +181,29 @@
     animation: pulse 8s ease-in-out infinite;
   }
 
-  /* Smooth Gradient Shift Animations */
-  @keyframes gradientShift1 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(5%, 10%) scale(1.05); }
-    50% { transform: translate(10%, 5%) scale(1.1); }
-    75% { transform: translate(5%, -5%) scale(1.05); }
+  /* Smooth Gradient Movement Animation */
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
-  @keyframes gradientShift2 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(-8%, 5%) scale(1.08); }
-    50% { transform: translate(-5%, 12%) scale(1); }
-    75% { transform: translate(3%, 8%) scale(1.05); }
-  }
-
-  @keyframes gradientShift3 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(10%, -8%) scale(1.1); }
-    50% { transform: translate(5%, -5%) scale(1.05); }
-    75% { transform: translate(-5%, -3%) scale(1); }
-  }
-
-  @keyframes gradientShift4 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(-10%, -10%) scale(1.05); }
-    50% { transform: translate(-15%, 5%) scale(1.1); }
-    75% { transform: translate(-5%, 10%) scale(1); }
-  }
-
-  @keyframes gradientShift5 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(15%, 8%) scale(1.08); }
-    66% { transform: translate(-10%, 15%) scale(1); }
+  @keyframes gradientMoveReverse {
+    0% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
   }
 
   /* Education Flowchart Styles */
