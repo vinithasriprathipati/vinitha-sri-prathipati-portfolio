@@ -6,8 +6,12 @@ import { Mail, Linkedin, Github, Send } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from '@emailjs/browser';
+import { useInView } from "@/hooks/useInView";
 
 const Contact = () => {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [leftRef, leftInView] = useInView({ threshold: 0.1 });
+  const [rightRef, rightInView] = useInView({ threshold: 0.1 });
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -88,7 +92,10 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 gradient-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef} 
+          className={`text-center mb-16 transition-all duration-1000 ${titleInView ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`}
+        >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Let's Connect</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to transform your data into actionable insights? Let's discuss your next project.
@@ -97,7 +104,10 @@ const Contact = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div 
+            ref={leftRef} 
+            className={`space-y-8 transition-all duration-1000 delay-200 ${leftInView ? 'animate-fade-in-left' : 'opacity-0 -translate-x-8'}`}
+          >
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
@@ -134,6 +144,7 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
+          <div ref={rightRef} className={`transition-all duration-1000 delay-400 ${rightInView ? 'animate-fade-in-right' : 'opacity-0 translate-x-8'}`}>
           <Card className="shadow-lg card-hover glow-hover">
             <CardHeader>
               <CardTitle className="text-2xl text-gray-900">Send a Message</CardTitle>
@@ -220,6 +231,7 @@ const Contact = () => {
               </form>
             </CardContent>
           </Card>
+          </div>
         </div>
       </div>
     </section>
