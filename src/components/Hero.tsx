@@ -13,8 +13,8 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mt-8">
+    <section id="home" className="h-screen flex items-center justify-center gradient-bg relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in-up">
           {/* Profile Picture */}
           <div className="mb-8">
