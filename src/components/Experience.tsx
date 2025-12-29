@@ -29,8 +29,8 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen flex items-center gradient-bg py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <section id="experience" className="py-20 gradient-bg">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={titleRef} 
           className={`text-center mb-16 transition-all duration-1000 ${titleInView ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`}
