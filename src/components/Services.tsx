@@ -1,8 +1,12 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Workflow, BarChart3, ArrowRight } from "lucide-react";
+import { useInView } from "@/hooks/useInView";
 
 const Services = () => {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [gridRef, gridInView] = useInView({ threshold: 0.1 });
+  
   const services = [
     {
       icon: <Workflow className="w-12 h-12" />,
@@ -21,16 +25,25 @@ const Services = () => {
   return (
     <section id="services" className="py-20 gradient-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef} 
+          className={`text-center mb-16 transition-all duration-1000 ${titleInView ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`}
+        >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Specialized solutions to transform your business processes and data insights
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="shadow-lg card-hover glow-hover">
+            <Card 
+              key={index} 
+              className={`shadow-lg card-hover glow-hover transition-all duration-700 ${
+                gridInView ? 'animate-fade-in-right' : 'opacity-0 translate-x-8'
+              }`}
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
               <CardHeader>
                 <div className="flex items-center space-x-4">
                   <div className="text-primary icon-hover">
