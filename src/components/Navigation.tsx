@@ -1,6 +1,6 @@
+
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +47,7 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/90 backdrop-blur-md shadow-sm border-b border-border/50' : 'bg-transparent'
+      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lr:px-8">
         <div className="flex items-center justify-between h-16">
@@ -55,13 +55,13 @@ const Navigation = () => {
             Vinitha Chowdary
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection('home')}
               className={`transition-colors ${
                 activeSection === 'home' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               Home
@@ -71,7 +71,7 @@ const Navigation = () => {
               className={`transition-colors ${
                 activeSection === 'about' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               About
@@ -81,7 +81,7 @@ const Navigation = () => {
               className={`transition-colors ${
                 activeSection === 'experience' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               Experience
@@ -91,7 +91,7 @@ const Navigation = () => {
               className={`transition-colors ${
                 activeSection === 'skills' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               Skills
@@ -101,7 +101,7 @@ const Navigation = () => {
               className={`transition-colors ${
                 activeSection === 'certifications' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               Certifications
@@ -111,7 +111,7 @@ const Navigation = () => {
               className={`transition-colors ${
                 activeSection === 'services' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               Services
@@ -121,7 +121,7 @@ const Navigation = () => {
               className={`transition-colors ${
                 activeSection === 'projects' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               Projects
@@ -131,22 +131,19 @@ const Navigation = () => {
               className={`transition-colors ${
                 activeSection === 'contact' 
                   ? 'text-primary font-semibold' 
-                  : 'text-muted-foreground hover:text-primary'
+                  : 'text-gray-600 hover:text-primary'
               }`}
             >
               Contact
             </button>
           </div>
 
-          <div className="flex items-center gap-2">
-            <ThemeToggle />
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="gradient-primary text-white"
-            >
-              Get In Touch
-            </Button>
-          </div>
+          <Button 
+            onClick={() => scrollToSection('contact')}
+            className="gradient-primary text-white"
+          >
+            Get In Touch
+          </Button>
         </div>
       </div>
     </nav>

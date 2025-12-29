@@ -3,64 +3,81 @@ import React from 'react';
 const BackgroundAnimation = () => {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
-      {/* Base background */}
-      <div className="absolute inset-0 bg-background transition-colors duration-500" />
+      {/* Base gradient layer */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background" />
       
-      {/* Primary animated gradient layer - adapts to theme */}
+      {/* Animated gradient orbs - slow, fluid motion */}
+      <div className="absolute inset-0">
+        {/* Primary blue orb */}
+        <div 
+          className="absolute w-[800px] h-[800px] rounded-full opacity-30 blur-[120px]"
+          style={{
+            background: 'radial-gradient(circle, hsl(220 80% 60% / 0.4) 0%, transparent 70%)',
+            top: '-20%',
+            left: '-10%',
+            animation: 'gradientShift1 25s ease-in-out infinite',
+          }}
+        />
+        
+        {/* Purple orb */}
+        <div 
+          className="absolute w-[700px] h-[700px] rounded-full opacity-25 blur-[100px]"
+          style={{
+            background: 'radial-gradient(circle, hsl(270 70% 55% / 0.4) 0%, transparent 70%)',
+            top: '30%',
+            right: '-15%',
+            animation: 'gradientShift2 30s ease-in-out infinite',
+          }}
+        />
+        
+        {/* Teal orb */}
+        <div 
+          className="absolute w-[600px] h-[600px] rounded-full opacity-25 blur-[100px]"
+          style={{
+            background: 'radial-gradient(circle, hsl(180 60% 50% / 0.35) 0%, transparent 70%)',
+            bottom: '-10%',
+            left: '20%',
+            animation: 'gradientShift3 28s ease-in-out infinite',
+          }}
+        />
+        
+        {/* Secondary blue accent */}
+        <div 
+          className="absolute w-[500px] h-[500px] rounded-full opacity-20 blur-[80px]"
+          style={{
+            background: 'radial-gradient(circle, hsl(200 75% 55% / 0.3) 0%, transparent 70%)',
+            top: '60%',
+            left: '60%',
+            animation: 'gradientShift4 22s ease-in-out infinite',
+          }}
+        />
+        
+        {/* Soft purple accent */}
+        <div 
+          className="absolute w-[400px] h-[400px] rounded-full opacity-20 blur-[70px]"
+          style={{
+            background: 'radial-gradient(circle, hsl(280 65% 60% / 0.25) 0%, transparent 70%)',
+            top: '10%',
+            left: '50%',
+            animation: 'gradientShift5 35s ease-in-out infinite',
+          }}
+        />
+      </div>
+      
+      {/* Noise texture overlay for premium feel */}
       <div 
-        className="absolute inset-0 opacity-70 dark:opacity-50 motion-reduce:opacity-40 motion-reduce:animate-none transition-opacity duration-500"
+        className="absolute inset-0 opacity-[0.03] mix-blend-overlay"
         style={{
-          background: `linear-gradient(
-            135deg,
-            hsl(var(--gradient-start)) 0%,
-            hsl(var(--gradient-mid)) 25%,
-            hsl(var(--gradient-end)) 50%,
-            hsl(var(--gradient-accent)) 75%,
-            hsl(var(--gradient-start)) 100%
-          )`,
-          backgroundSize: '400% 400%',
-          animation: 'gradientMove 20s ease-in-out infinite',
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+          backgroundRepeat: 'repeat',
         }}
       />
       
-      {/* Secondary subtle accent layer */}
+      {/* Subtle vignette effect */}
       <div 
-        className="absolute inset-0 opacity-40 dark:opacity-30 motion-reduce:opacity-20 motion-reduce:animate-none transition-opacity duration-500"
+        className="absolute inset-0 opacity-40"
         style={{
-          background: `linear-gradient(
-            -45deg,
-            transparent 0%,
-            hsl(var(--primary) / 0.08) 30%,
-            hsl(var(--accent) / 0.06) 50%,
-            hsl(var(--primary) / 0.08) 70%,
-            transparent 100%
-          )`,
-          backgroundSize: '300% 300%',
-          animation: 'gradientMoveReverse 25s ease-in-out infinite',
-        }}
-      />
-      
-      {/* Subtle radial glow for depth */}
-      <div 
-        className="absolute inset-0 opacity-30 dark:opacity-20 transition-opacity duration-500"
-        style={{
-          background: `radial-gradient(
-            ellipse at 30% 20%,
-            hsl(var(--primary) / 0.1) 0%,
-            transparent 50%
-          ), radial-gradient(
-            ellipse at 70% 80%,
-            hsl(var(--accent) / 0.08) 0%,
-            transparent 50%
-          )`,
-        }}
-      />
-      
-      {/* Top fade for nav readability */}
-      <div 
-        className="absolute top-0 left-0 right-0 h-24 transition-colors duration-500"
-        style={{
-          background: 'linear-gradient(to bottom, hsl(var(--background)), transparent)',
+          background: 'radial-gradient(ellipse at center, transparent 0%, hsl(var(--background)) 100%)',
         }}
       />
     </div>

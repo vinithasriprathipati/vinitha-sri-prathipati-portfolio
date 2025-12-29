@@ -7,97 +7,86 @@
 
 @layer base {
   :root {
-    /* Light Theme - Soft blue and white with dark navy text */
-    --background: 210 50% 98%;
-    --foreground: 220 40% 13%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 210 50% 99%;
-    --card-foreground: 220 40% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 13%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 198 93% 55%;
+    --primary: 198 93% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 220 40% 20%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 30% 94%;
-    --muted-foreground: 220 20% 46%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 176 70% 45%;
-    --accent-foreground: 220 40% 13%;
+    --accent: 176 77% 47%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 30% 88%;
-    --input: 210 30% 88%;
-    --ring: 198 93% 55%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 198 93% 60%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 210 50% 98%;
-    --sidebar-foreground: 220 30% 30%;
-    --sidebar-primary: 220 40% 15%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 210 40% 94%;
-    --sidebar-accent-foreground: 220 40% 15%;
-    --sidebar-border: 210 25% 88%;
-    --sidebar-ring: 198 93% 55%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Theme-specific gradient colors */
-    --gradient-start: 210 60% 96%;
-    --gradient-mid: 198 70% 94%;
-    --gradient-end: 200 65% 95%;
-    --gradient-accent: 176 60% 92%;
+    --tech-blue: 198 93% 60%;
+    --tech-teal: 176 77% 47%;
+    --tech-light: 198 100% 95%;
   }
 
   .dark {
-    /* Dark Theme - Deep navy with blue/cyan accents */
-    --background: 222 47% 11%;
-    --foreground: 210 40% 96%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 222 47% 13%;
-    --card-foreground: 210 40% 96%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 222 47% 12%;
-    --popover-foreground: 210 40% 96%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 198 90% 60%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 220 35% 18%;
-    --secondary-foreground: 210 40% 92%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 30% 20%;
-    --muted-foreground: 215 25% 65%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 176 70% 50%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62% 50%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 30% 22%;
-    --input: 220 30% 22%;
-    --ring: 198 90% 60%;
-
-    --sidebar-background: 222 47% 10%;
-    --sidebar-foreground: 210 35% 90%;
-    --sidebar-primary: 198 90% 60%;
-    --sidebar-primary-foreground: 222 47% 11%;
-    --sidebar-accent: 220 30% 18%;
-    --sidebar-accent-foreground: 210 35% 90%;
-    --sidebar-border: 220 30% 20%;
-    --sidebar-ring: 198 90% 60%;
-
-    /* Theme-specific gradient colors */
-    --gradient-start: 222 50% 14%;
-    --gradient-mid: 220 45% 16%;
-    --gradient-end: 225 45% 15%;
-    --gradient-accent: 200 50% 18%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -192,29 +181,39 @@
     animation: pulse 8s ease-in-out infinite;
   }
 
-  /* Smooth Gradient Movement Animation */
-  @keyframes gradientMove {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  /* Smooth Gradient Shift Animations */
+  @keyframes gradientShift1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(5%, 10%) scale(1.05); }
+    50% { transform: translate(10%, 5%) scale(1.1); }
+    75% { transform: translate(5%, -5%) scale(1.05); }
   }
 
-  @keyframes gradientMoveReverse {
-    0% {
-      background-position: 100% 0%;
-    }
-    50% {
-      background-position: 0% 100%;
-    }
-    100% {
-      background-position: 100% 0%;
-    }
+  @keyframes gradientShift2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(-8%, 5%) scale(1.08); }
+    50% { transform: translate(-5%, 12%) scale(1); }
+    75% { transform: translate(3%, 8%) scale(1.05); }
+  }
+
+  @keyframes gradientShift3 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(10%, -8%) scale(1.1); }
+    50% { transform: translate(5%, -5%) scale(1.05); }
+    75% { transform: translate(-5%, -3%) scale(1); }
+  }
+
+  @keyframes gradientShift4 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(-10%, -10%) scale(1.05); }
+    50% { transform: translate(-15%, 5%) scale(1.1); }
+    75% { transform: translate(-5%, 10%) scale(1); }
+  }
+
+  @keyframes gradientShift5 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(15%, 8%) scale(1.08); }
+    66% { transform: translate(-10%, 15%) scale(1); }
   }
 
   /* Education Flowchart Styles */
