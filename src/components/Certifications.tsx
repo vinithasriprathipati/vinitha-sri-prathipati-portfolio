@@ -6,11 +6,11 @@ import { Award, BadgeCheck, ExternalLink } from "lucide-react";
 const Certifications = () => {
   const certifications = [
     {
-      title: "Microsoft Certified: Fabric Analytics Engineer Associate",
-      issuer: "Microsoft",
+      title: "Certified Pega Senior System Architect",
+      issuer: "Pega Academy",
       type: "Professional Certification",
       icon: <Award className="w-6 h-6" />,
-      link: "https://drive.google.com/file/d/1coJxdnQMU_JX3uqfOenQMYfbad_CKYw6/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1yQfBGv5ymWT-APL2tvHCjc11UJVmphdf/view?usp=sharing"
     },
     {
       title: "Certified Pega System Architect",
@@ -18,6 +18,13 @@ const Certifications = () => {
       type: "Professional Certification",
       icon: <Award className="w-6 h-6" />,
       link: "https://drive.google.com/file/d/1DvscpTPYQBa9iWGVXqwSzxammM5YOM3o/view?usp=sharing"
+    },
+    {
+      title: "Microsoft Certified: Fabric Analytics Engineer Associate",
+      issuer: "Microsoft",
+      type: "Professional Certification",
+      icon: <Award className="w-6 h-6" />,
+      link: "https://drive.google.com/file/d/1coJxdnQMU_JX3uqfOenQMYfbad_CKYw6/view?usp=sharing"
     },
     {
       title: "Java IT Specialist",
