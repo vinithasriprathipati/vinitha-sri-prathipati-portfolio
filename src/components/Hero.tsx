@@ -58,7 +58,7 @@ const Hero = () => {
               className="text-lg px-8 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-float-slow hover:animate-glow"
             >
               <a 
-                href="https://drive.google.com/file/d/1V-8UvSia22FdRO4tgjkLPkVAhowV3rsf/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1x7OLAChlFQE_hdqJCdKZb64PfEX0fs0Q/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
