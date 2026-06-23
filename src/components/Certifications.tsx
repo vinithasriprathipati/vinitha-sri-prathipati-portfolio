@@ -24,7 +24,7 @@ const Certifications = () => {
       issuer: "Microsoft",
       type: "Professional Certification",
       icon: <Award className="w-6 h-6" />,
-      link: "https://drive.google.com/file/d/1coJxdnQMU_JX3uqfOenQMYfbad_CKYw6/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1841EDuagwixOwHkTSXZHb4hUDEdb9X3i/view?usp=sharing"
     },
     {
       title: "Java IT Specialist",
